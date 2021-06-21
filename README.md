@@ -2,7 +2,7 @@
 # API - Valoriza
 Developed during NLW #06 with NodeJs && Typescript
 
-# Getting started
+## Getting started
 
 Clone the project
 ```
