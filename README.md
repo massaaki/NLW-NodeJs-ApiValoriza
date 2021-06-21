@@ -14,7 +14,7 @@ Install dependences
 yarn
 ```
 
-Run server
+Start server
 ```
 yarn dev
 ```
