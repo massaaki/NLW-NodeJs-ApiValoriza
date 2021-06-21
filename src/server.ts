@@ -1,14 +1,10 @@
+import "reflect-metadata";
 import express from 'express';
+
+import "./database";
 
 const app = express();
 
-/**
- * GET    => Search for informations
- * POST   => Insert/create informations
- * PUT    => change information
- * DELETE => Remove data
- * PATCH  => Change specific information
- */
 app.get('/test', (request, response) => {
 	return response.send('hello nlw!');
 })
