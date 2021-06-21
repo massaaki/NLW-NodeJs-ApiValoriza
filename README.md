@@ -27,6 +27,11 @@ yarn typeorm migration:create -n <EntityName>
 ```
 yarn typeorm migration:run  
 ```
+## Revert migration
+```
+yarn typeorm migration:revert
+```
+
 
 
 # License
