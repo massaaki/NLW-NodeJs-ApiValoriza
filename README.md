@@ -19,5 +19,15 @@ Start server
 yarn dev
 ```
 
+## Creating migrations
+```
+yarn typeorm migration:create -n <EntityName> 
+```
+## Execute migrations
+```
+yarn typeorm migration:run  
+```
+
+
 # License
 This project is under the [MIT license](https://opensource.org/licenses/MIT).
