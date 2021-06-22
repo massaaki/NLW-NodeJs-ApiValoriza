@@ -1,6 +1,9 @@
 [![Author](https://img.shields.io/badge/Author-massaaki-blue)](https://github.com/massaaki/)
 # API - Valoriza
-Developed during NLW #06 with NodeJs && Typescript
+Developed during NLW #06 with NodeJs, Typescript, Express and Typeorm
+
+## Architecture
+![project architecture](https://github.com/massaaki/NLW-NodeJs-ApiValoriza/blob/main/images/architecture.png)
 
 ## Getting started
 
@@ -38,5 +41,5 @@ yarn typeorm entity:create <EntityName>
 ```
 
 
-# License
+## License
 This project is under the [MIT license](https://opensource.org/licenses/MIT).
