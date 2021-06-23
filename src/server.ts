@@ -2,6 +2,8 @@ import "reflect-metadata";
 import express, { Request, Response, NextFunction } from 'express';
 import "express-async-errors";
 
+import { AppError } from './errors/AppError';
+
 import { router } from './routes';
 
 import "./database";
@@ -13,9 +15,10 @@ app.use(express.json());
 app.use(router);
 
 app.use((err: Error, request: Request, response: Response, next: NextFunction) => {
-	if (err instanceof Error) {
-		return response.status(400).json({
-			error: err.message
+	if (err instanceof AppError) {
+		return response.status(err.statusCode).json({
+			status: 'error',
+			message: err.message
 		});
 	}
 	return response.status(500).json({
