@@ -1,5 +1,7 @@
 import { getCustomRepository } from 'typeorm';
+import { hash } from 'bcryptjs';
 import { UsersRepositores } from "../repositories/UsersRepositores";
+
 
 
 interface IUserRequest {
@@ -17,6 +19,8 @@ class CreateUserService {
 			throw new Error("e-mail cannot be empty");
 		}
 
+		const passwordHash = await hash(password, 8);
+
 		const userAlreadyExists = await usersRepository.findOne({
 			email
 		});
@@ -29,7 +33,7 @@ class CreateUserService {
 			name,
 			email,
 			admin,
-			password
+			password: passwordHash
 		});
 
 		usersRepository.save(user);
