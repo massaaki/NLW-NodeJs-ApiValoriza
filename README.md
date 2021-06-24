@@ -7,9 +7,10 @@ Developed during NLW #06 with NodeJs, Typescript, Express and Typeorm
 
 ## Getting started
 
-Clone the project
+Clone this repository and go to project folder
 ```
-git clone https://github.com/massaaki/NLW-NodeJs-ApiValoriza
+git clone https://github.com/massaaki/NLW-NodeJs-ApiValoriza apiValoriza
+cd ./apiValoriza
 ```
 
 Install dependences
