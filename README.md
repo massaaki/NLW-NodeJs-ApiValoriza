@@ -1,15 +1,27 @@
-[![Author](https://img.shields.io/badge/Author-massaaki-blue)](https://github.com/massaaki/)
-# API - Valoriza
-Developed during NLW #06 with NodeJs, Typescript, Express and Typeorm
+<h1 align="center">API - Valoriza</h1>
 
-## Architecture
-![project architecture](https://github.com/massaaki/NLW-NodeJs-ApiValoriza/blob/main/images/architecture.png)
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
+
+ <img src="https://img.shields.io/static/v1?label=NLW&message=06&color=8257E5&labelColor=000000" alt="NLW 06" />
+</p>
+<p align="center">Just a simple api to send and receive compliments, that can be filtered by tags</p>
+<p align="center">Technologies: NodeJs, Typescript, Express and Typeorm</p>
+<br>
+
+
+
+<h2 align="center"> Architecture </h2>
+<div align="center">
+  <img src="https://github.com/massaaki/NLW-NodeJs-ApiValoriza/blob/main/images/architecture.png" />
+</div>
 
 ## Getting started
 
-Clone the project
+Clone this repository and go to project folder
 ```
-git clone https://github.com/massaaki/NLW-NodeJs-ApiValoriza
+git clone https://github.com/massaaki/NLW-NodeJs-ApiValoriza apiValoriza
+cd ./apiValoriza
 ```
 
 Install dependences
